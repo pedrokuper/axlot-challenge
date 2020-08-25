@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+.chores-checkbox {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1.7px solid #cacece;
+  padding: 10px;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  margin-top: -35px;
+  margin-right: -25px;
+}
+.chores-checkbox:checked {
+  background-color: #e9ecee;
+  border: 1px solid #adb8c0;
+  color: #99a1a7;
+}
+.chores-checkbox:checked:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  font-size: 14px;
+  position: absolute;
+  top: 2px;
+  left: 3.5px;
+  color: #99a1a7;
+}
+
+.chores-checkbox-done {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1.7px solid #cacece;
+  padding: 10px;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  margin-top: -35px;
+  margin-right: -25px;
+}
+.chores-checkbox-done:checked {
+  background-color: #f26c4f;
+  border: 1px solid #adb8c0;
+  color: #99a1a7;
+}
+.chores-checkbox-done:checked:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  font-size: 14px;
+  position: absolute;
+  top: 2px;
+  left: 3.5px;
+  color: #fff;
+}
+
+.chores-section {
+  margin-top: 20px;
+  padding: 0 15px;
+}
+.chores-section .box {
+  border-radius: 6px;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 15px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.chores-section .box .box-icon {
+  margin-left: -25px;
+}
+.chores-section .box .gray-icon {
+  width: 53px;
+  background-color: #a4a1a1;
+  height: 53px;
+  border-radius: 50%;
+}
+.chores-section .box .box-text {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.chores-section .box .box-text .title {
+  color: #f26c4f;
+  font-size: 1.5rem;
+}
+.chores-section .box .box-text .done {
+  color: #a4a1a1;
+}
+.chores-section .box .box-text .subtitle {
+  color: #a4a1a1;
+  font-size: 0.75rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+.main-container .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f26c4f;
+  min-height: 10vh;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.main-container .header-container .menu-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main-container .header-container .menu-item {
+  margin: 0 10px;
+}
+.main-container .user-information-container {
+  padding: 10px 10px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .user-information-container .user-information {
+  align-items: center;
+  display: flex;
+  color: #f26c4f;
+  font-size: 1.35rem;
+}
+.main-container .user-information-container .user-badges {
+  color: #a4a1a1;
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+}
+.main-container .user-information-container .user-badges .user-hidden-badges {
+  margin-left: 5px;
+}
+.main-container .time {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main-container .time .btn {
+  margin-top: 30px;
+  padding: 7px 25px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.main-container .time .btn-corners {
+  background-color: #e8e8e8;
+  color: #a4a1a1;
+}
+.main-container .time .yesterday {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.main-container .time .today {
+  background: linear-gradient(#f26c4f, #fe2c00);
+  color: #fafafa;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.main-container .time .tomorrow {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.main-container .section-separator {
+  border-bottom: 1px solid #a4a1a1;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.main-container .wallet-section {
+  padding: 10px 20px;
+}
+.main-container .wallet-section .money-allowance {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #f26c4f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-container .wallet-section .money-allowance span {
+  font-size: 1.25rem;
+}
+.main-container .wallet-section .money-earned {
+  font-weight: 400;
+  margin-top: -25px;
+  text-transform: uppercase;
+  color: #a4a1a1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,128 @@
+@import "./partials/palette";
+@import "./partials/checkbox";
+@import "./partials/chores";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+$primary: #f26c4f;
+$secondary: #a4a1a1;
+$shadow: #00000029;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  background-color: #fafafa;
+  min-height: 100vh;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary;
+    min-height: 10vh;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #fff;
+
+    .menu-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .menu-item {
+      margin: 0 10px;
+    }
+  }
+
+  .user-information-container {
+    padding: 10px 10px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    .user-information {
+      align-items: center;
+      display: flex;
+      color: $primary;
+      font-size: 1.35rem;
+    }
+
+    .user-badges {
+      color: $secondary;
+      display: flex;
+      align-items: center;
+      font-size: 0.75rem;
+
+      .user-hidden-badges {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .time {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .btn {
+      margin-top: 30px;
+      padding: 7px 25px;
+      box-shadow: 0px 3px 6px $shadow;
+    }
+
+    .btn-corners {
+      background-color: #e8e8e8;
+      color: $secondary;
+    }
+    .yesterday {
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+    .today {
+      background: linear-gradient(#f26c4f, #fe2c00);
+      color: #fafafa;
+      box-shadow: 0px 3px 6px $shadow;
+    }
+    .tomorrow {
+      border-bottom-right-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  }
+
+  .section-separator {
+    border-bottom: 1px solid $secondary;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .wallet-section {
+    padding: 10px 20px;
+
+    .money-allowance {
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $primary;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        font-size: 1.25rem;
+      }
+    }
+    .money-earned {
+      font-weight: 400;
+
+      margin-top: -25px;
+      text-transform: uppercase;
+      color: $secondary;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
